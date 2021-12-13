@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Package1/" xmlns:Package1="http://Package1/">
+  <xsd:complexType name="Product">
+    <xsd:sequence>
+      <xsd:element name="ProductId">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Name">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Price">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Quantity">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="ReorderLevel">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="is_sold_in" type="Package1:Sale">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <inverseVerbPhrase>of</inverseVerbPhrase>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="Product" type="Package1:Product">
+    <xsd:key name="Package1_Product_Product_PK">
+      <xsd:selector xpath="."/>
+      <xsd:field xpath="ProductId"/>
+    </xsd:key>
+  </xsd:element>
+  <xsd:complexType name="Member">
+    <xsd:sequence>
+      <xsd:element name="MemberId">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="First_Name">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Sur_name">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Address">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Contact">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Expires">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="makes" type="Package1:Sale">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <inverseVerbPhrase>made to</inverseVerbPhrase>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="Member" type="Package1:Member">
+    <xsd:key name="Package1_Member_Member_PK">
+      <xsd:selector xpath="."/>
+      <xsd:field xpath="MemberId"/>
+    </xsd:key>
+  </xsd:element>
+  <xsd:complexType name="Sale">
+    <xsd:sequence>
+      <xsd:element name="SaleId">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Date">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Price">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="Sale" type="Package1:Sale">
+    <xsd:key name="Package1_Sale_Sale_PK">
+      <xsd:selector xpath="."/>
+      <xsd:field xpath="SaleId"/>
+    </xsd:key>
+  </xsd:element>
+  <xsd:complexType name="Supplier">
+    <xsd:sequence>
+      <xsd:element name="SupplierId">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Name">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Address">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Contact">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="5"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="_Product" type="Package1:Product">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <inverseVerbPhrase>Verb1</inverseVerbPhrase>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="Supplier" type="Package1:Supplier">
+    <xsd:key name="Package1_Supplier_Supplier_PK">
+      <xsd:selector xpath="."/>
+      <xsd:field xpath="SupplierId"/>
+    </xsd:key>
+  </xsd:element>
+</xsd:schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><TransformationConfiguration forwardTransformation="com.ibm.xtools.transform.xsd.ldm.root" version="8.0.0">
+<!--xtools2_universal_type_manager-->
+<!--IBM InfoSphere Data Architect 9.1.4.0-->
+<Property id="CONTEXT_SOURCE" value="@49,34@com.ibm.xtools.transform.core.metatype.Collection/ANALYZE_IDA/Package1/Package1.xsdjava.util.ArrayList,83&lt;ELEM_START&gt;@43,=@com.ibm.xtools.transform.core.metatype.file/ANALYZE_IDA/Package1/Package1.xsd"/>
+<Property id="CONTEXT_TARGET_CONTAINER" value="@46,=@com.ibm.xtools.transform.core.metatype.project/ANALYZE_IDA"/>
+<Property id="DCMP" value="@43,10@com.ibm.xtools.transform.core.metatype.DCMPConceptual1"/>
+<Property id="FORWARD_TRANSFORMATION_EXTENSIONS_STATUS" value="@42,0@com.ibm.xtools.transform.core.metatype.Mapjava.util.HashMap&lt;ELEM_START&gt;"/>
+<Property id="generateIdentifying" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="generateSurrogateKey" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="logTrace" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="mergeEntities" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="overwriteFilesWithoutWarning" value="@46,=@com.ibm.xtools.transform.core.metatype.booleanfalse"/>
+<Property id="prefixFKANameWithInvVerbPhrase" value="@46,=@com.ibm.xtools.transform.core.metatype.booleantrue"/>
+</TransformationConfiguration>

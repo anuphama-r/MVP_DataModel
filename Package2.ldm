@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LogicalDataModel="http:///com/ibm/db/models/logical/logical.ecore">
+  <LogicalDataModel:Package xmi:id="_3U-UgFNyEeyu8ZOh8CW3bg" name="Package1" targetNamespace="http://Package1/" contents="_3U-UgVNyEeyu8ZOh8CW3bg _3U-UiVNyEeyu8ZOh8CW3bg _3U-UlVNyEeyu8ZOh8CW3bg _3U-UpFNyEeyu8ZOh8CW3bg"/>
+  <LogicalDataModel:Entity xmi:id="_3U-UgVNyEeyu8ZOh8CW3bg" name="Member" package="_3U-UgFNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-Un1NyEeyu8ZOh8CW3bg">
+    <attributes xmi:id="_3U-UglNyEeyu8ZOh8CW3bg" name="MemberId" dataType="CHAR(5)" required="true"/>
+    <attributes xmi:id="_3U-Ug1NyEeyu8ZOh8CW3bg" name="First_Name" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UhFNyEeyu8ZOh8CW3bg" name="Sur_name" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UhVNyEeyu8ZOh8CW3bg" name="Address" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UhlNyEeyu8ZOh8CW3bg" name="Contact" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-Uh1NyEeyu8ZOh8CW3bg" name="Expires" dataType="CHAR(5)"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_3U-UiFNyEeyu8ZOh8CW3bg" name="Package1_Member_Member_PK" attributes="_3U-UglNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-Un1NyEeyu8ZOh8CW3bg"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Entity xmi:id="_3U-UiVNyEeyu8ZOh8CW3bg" name="Product" package="_3U-UgFNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-UolNyEeyu8ZOh8CW3bg _3U-UlFNyEeyu8ZOh8CW3bg" relationships="_3U-UklNyEeyu8ZOh8CW3bg">
+    <attributes xmi:id="_3U-UilNyEeyu8ZOh8CW3bg" name="ProductId" dataType="CHAR(5)" required="true"/>
+    <attributes xmi:id="_3U-Ui1NyEeyu8ZOh8CW3bg" name="Name" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UjFNyEeyu8ZOh8CW3bg" name="Price" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UjVNyEeyu8ZOh8CW3bg" name="Quantity" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UjlNyEeyu8ZOh8CW3bg" name="ReorderLevel" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-Uj1NyEeyu8ZOh8CW3bg" name="SupplierId" dataType="CHAR(5)" required="true"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_3U-UkFNyEeyu8ZOh8CW3bg" name="Package1_Product_Product_PK" attributes="_3U-UilNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-UolNyEeyu8ZOh8CW3bg"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_3U-UkVNyEeyu8ZOh8CW3bg" name="ForeignKey1" attributes="_3U-Uj1NyEeyu8ZOh8CW3bg" relationshipEnds="_3U-UlFNyEeyu8ZOh8CW3bg"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Relationship xmi:id="_3U-UklNyEeyu8ZOh8CW3bg" name="PRODUCT_SUPPLIER_FK" relationshipType="NON_IDENTIFYING" owningEntity="_3U-UiVNyEeyu8ZOh8CW3bg">
+    <relationshipEnds xmi:id="_3U-Uk1NyEeyu8ZOh8CW3bg" verbPhrase="_Product" entity="_3U-UpFNyEeyu8ZOh8CW3bg" key="_3U-UqVNyEeyu8ZOh8CW3bg"/>
+    <relationshipEnds xmi:id="_3U-UlFNyEeyu8ZOh8CW3bg" verbPhrase="Verb1" cardinality="ZERO_TO_MANY" entity="_3U-UiVNyEeyu8ZOh8CW3bg" key="_3U-UkVNyEeyu8ZOh8CW3bg"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Entity xmi:id="_3U-UlVNyEeyu8ZOh8CW3bg" name="Sale" package="_3U-UgFNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-UoFNyEeyu8ZOh8CW3bg _3U-Uo1NyEeyu8ZOh8CW3bg" relationships="_3U-UnlNyEeyu8ZOh8CW3bg _3U-UoVNyEeyu8ZOh8CW3bg">
+    <attributes xmi:id="_3U-UllNyEeyu8ZOh8CW3bg" name="SaleId" dataType="CHAR(5)" required="true"/>
+    <attributes xmi:id="_3U-Ul1NyEeyu8ZOh8CW3bg" name="Date" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UmFNyEeyu8ZOh8CW3bg" name="Price" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UmVNyEeyu8ZOh8CW3bg" name="MemberId" dataType="CHAR(5)" required="true"/>
+    <attributes xmi:id="_3U-UmlNyEeyu8ZOh8CW3bg" name="ProductId" dataType="CHAR(5)" required="true"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_3U-Um1NyEeyu8ZOh8CW3bg" name="Package1_Sale_Sale_PK" attributes="_3U-UllNyEeyu8ZOh8CW3bg"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_3U-UnFNyEeyu8ZOh8CW3bg" name="ForeignKey1" attributes="_3U-UmVNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-UoFNyEeyu8ZOh8CW3bg"/>
+    <keys xsi:type="LogicalDataModel:ForeignKey" xmi:id="_3U-UnVNyEeyu8ZOh8CW3bg" name="ForeignKey2" attributes="_3U-UmlNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-Uo1NyEeyu8ZOh8CW3bg"/>
+  </LogicalDataModel:Entity>
+  <LogicalDataModel:Relationship xmi:id="_3U-UnlNyEeyu8ZOh8CW3bg" name="SALE_MEMBER_FK" relationshipType="NON_IDENTIFYING" owningEntity="_3U-UlVNyEeyu8ZOh8CW3bg">
+    <relationshipEnds xmi:id="_3U-Un1NyEeyu8ZOh8CW3bg" verbPhrase="makes" entity="_3U-UgVNyEeyu8ZOh8CW3bg" key="_3U-UiFNyEeyu8ZOh8CW3bg"/>
+    <relationshipEnds xmi:id="_3U-UoFNyEeyu8ZOh8CW3bg" verbPhrase="made to" cardinality="ZERO_TO_MANY" entity="_3U-UlVNyEeyu8ZOh8CW3bg" key="_3U-UnFNyEeyu8ZOh8CW3bg"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Relationship xmi:id="_3U-UoVNyEeyu8ZOh8CW3bg" name="SALE_PRODUCT_FK" relationshipType="NON_IDENTIFYING" owningEntity="_3U-UlVNyEeyu8ZOh8CW3bg">
+    <relationshipEnds xmi:id="_3U-UolNyEeyu8ZOh8CW3bg" verbPhrase="is_sold_in" entity="_3U-UiVNyEeyu8ZOh8CW3bg" key="_3U-UkFNyEeyu8ZOh8CW3bg"/>
+    <relationshipEnds xmi:id="_3U-Uo1NyEeyu8ZOh8CW3bg" verbPhrase="of" cardinality="ZERO_TO_MANY" entity="_3U-UlVNyEeyu8ZOh8CW3bg" key="_3U-UnVNyEeyu8ZOh8CW3bg"/>
+  </LogicalDataModel:Relationship>
+  <LogicalDataModel:Entity xmi:id="_3U-UpFNyEeyu8ZOh8CW3bg" name="Supplier" package="_3U-UgFNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-Uk1NyEeyu8ZOh8CW3bg">
+    <attributes xmi:id="_3U-UpVNyEeyu8ZOh8CW3bg" name="SupplierId" dataType="CHAR(5)" required="true"/>
+    <attributes xmi:id="_3U-UplNyEeyu8ZOh8CW3bg" name="Name" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-Up1NyEeyu8ZOh8CW3bg" name="Address" dataType="CHAR(5)"/>
+    <attributes xmi:id="_3U-UqFNyEeyu8ZOh8CW3bg" name="Contact" dataType="CHAR(5)"/>
+    <keys xsi:type="LogicalDataModel:PrimaryKey" xmi:id="_3U-UqVNyEeyu8ZOh8CW3bg" name="Package1_Supplier_Supplier_PK" attributes="_3U-UpVNyEeyu8ZOh8CW3bg" relationshipEnds="_3U-Uk1NyEeyu8ZOh8CW3bg"/>
+  </LogicalDataModel:Entity>
+</xmi:XMI>

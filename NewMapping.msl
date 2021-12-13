@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msl:mappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:msl="http:///com/ibm/datatools/metadata/mapping/model/model.ecore" scenario="com.ibm.datatools.metadata.mapping.scenario.rdb" xmiIdUpgraded="true">
+  <msl:mapping id="_TPjoIFfpEeyu8ZOh8CW3bg">
+    <msl:mapping id="_RGK5xlfpEeyu8ZOh8CW3bg">
+      <msl:annotations key="Discovery Percentile " value="100"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Leaf Level" value="0.0"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Second Level" value="0.0"/>
+      <msl:annotations key="Status " value="Accepted"/>
+      <msl:input name="_path0" path="$_resource1/Member/MemberId" pathXmiId="_3U-UglNyEeyu8ZOh8CW3bg"/>
+      <msl:output name="_path1" path="$_resource0/MEMBER/MEMBERID" pathXmiId="_UDegUlNzEeyu8ZOh8CW3bg"/>
+    </msl:mapping>
+    <msl:mapping id="_TPjoIVfpEeyu8ZOh8CW3bg">
+      <msl:annotations key="Discovery Percentile " value="100"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Leaf Level" value="0.0"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Second Level" value="0.0"/>
+      <msl:annotations key="Status " value="Accepted"/>
+      <msl:input name="_path2" path="$_resource1/Member/First_Name" pathXmiId="_3U-Ug1NyEeyu8ZOh8CW3bg"/>
+      <msl:output name="_path3" path="$_resource0/MEMBER/FIRST_NAME" pathXmiId="_UDegVVNzEeyu8ZOh8CW3bg"/>
+    </msl:mapping>
+    <msl:mapping id="_TPjoIlfpEeyu8ZOh8CW3bg">
+      <msl:annotations key="Discovery Percentile " value="100"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Leaf Level" value="0.0"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Second Level" value="0.0"/>
+      <msl:annotations key="Status " value="Accepted"/>
+      <msl:input name="_path4" path="$_resource1/Member/Sur_name" pathXmiId="_3U-UhFNyEeyu8ZOh8CW3bg"/>
+      <msl:output name="_path5" path="$_resource0/MEMBER/SUR_NAME" pathXmiId="_UDegWFNzEeyu8ZOh8CW3bg"/>
+    </msl:mapping>
+    <msl:mapping id="_TPjoI1fpEeyu8ZOh8CW3bg">
+      <msl:annotations key="Discovery Percentile " value="100"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Leaf Level" value="0.0"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Second Level" value="0.0"/>
+      <msl:annotations key="Status " value="Accepted"/>
+      <msl:input name="_path6" path="$_resource1/Member/Address" pathXmiId="_3U-UhVNyEeyu8ZOh8CW3bg"/>
+      <msl:output name="_path7" path="$_resource0/MEMBER/ADDRESS" pathXmiId="_UDegW1NzEeyu8ZOh8CW3bg"/>
+    </msl:mapping>
+    <msl:mapping id="_TPjoJFfpEeyu8ZOh8CW3bg">
+      <msl:annotations key="Discovery Percentile " value="100"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Leaf Level" value="0.0"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Second Level" value="0.0"/>
+      <msl:annotations key="Status " value="Accepted"/>
+      <msl:input name="_path8" path="$_resource1/Member/Contact" pathXmiId="_3U-UhlNyEeyu8ZOh8CW3bg"/>
+      <msl:output name="_path9" path="$_resource0/MEMBER/CONTACT" pathXmiId="_UDegXlNzEeyu8ZOh8CW3bg"/>
+    </msl:mapping>
+    <msl:mapping id="_TPjoJVfpEeyu8ZOh8CW3bg">
+      <msl:annotations key="Discovery Percentile " value="100"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Leaf Level" value="0.0"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Second Level" value="0.0"/>
+      <msl:annotations key="Status " value="Accepted"/>
+      <msl:input name="_path10" path="$_resource1/Member/Expires" pathXmiId="_3U-Uh1NyEeyu8ZOh8CW3bg"/>
+      <msl:output name="_path11" path="$_resource0/MEMBER/EXPIRES" pathXmiId="_UDegYVNzEeyu8ZOh8CW3bg"/>
+    </msl:mapping>
+    <msl:input name="_path12" path="$_resource1/Member" pathXmiId="_3U-UgVNyEeyu8ZOh8CW3bg"/>
+    <msl:output name="_path13" path="$_resource0/MEMBER" pathXmiId="_UDegUVNzEeyu8ZOh8CW3bg"/>
+  </msl:mapping>
+  <msl:mapping id="_8LV24FfuEeyu8ZOh8CW3bg">
+    <msl:mapping id="_7YOX4VfuEeyu8ZOh8CW3bg">
+      <msl:annotations key="Discovery Percentile " value="100"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Leaf Level" value="0.0"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Second Level" value="0.0"/>
+      <msl:annotations key="Status " value="Accepted"/>
+      <msl:input name="_path14" path="$_resource1/Product/ProductId" pathXmiId="_3U-UilNyEeyu8ZOh8CW3bg"/>
+      <msl:output name="_path15" path="$_resource0/PRODUCT/PRODUCTID" pathXmiId="_UDeghVNzEeyu8ZOh8CW3bg"/>
+    </msl:mapping>
+    <msl:mapping id="_Dn354FfvEeyu8ZOh8CW3bg">
+      <msl:annotations key="Discovery Percentile " value="100"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Leaf Level" value="0.0"/>
+      <msl:annotations key="Discovery Metric: LCS Metric Second Level" value="0.0"/>
+      <msl:annotations key="Status " value="Accepted"/>
+      <msl:input path="$_resource1/Product/Name" pathXmiId="_3U-Ui1NyEeyu8ZOh8CW3bg"/>
+      <msl:output path="$_resource0/PRODUCT/NAME" pathXmiId="_UDegiFNzEeyu8ZOh8CW3bg"/>
+    </msl:mapping>
+    <msl:input name="_path16" path="$_resource1/Product" pathXmiId="_3U-UiVNyEeyu8ZOh8CW3bg"/>
+    <msl:output name="_path17" path="$_resource0/PRODUCT" pathXmiId="_UDeghFNzEeyu8ZOh8CW3bg"/>
+  </msl:mapping>
+  <msl:inputs name="_resource1" location="/ANALYZE_IDA/Package2.ldm" root="/Package1"/>
+  <msl:outputs name="_resource0" location="/ANALYZE_IDA/Package2.dbm" root="/Database/Schema"/>
+</msl:mappingRoot>
